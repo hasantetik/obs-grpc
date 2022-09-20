@@ -1,0 +1,8 @@
+grpc:
+  client:
+    grpc-work-service:
+      address: static://localhost:9091
+      negotiation-type: plaintext
+
+server:
+  port: 9092

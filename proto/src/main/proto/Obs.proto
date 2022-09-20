@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_package = "com.proto";
+option java_multiple_files = true;
+
+message StudentRegistration {
+  string first_name = 1;
+  string second_name = 2;
+}
+
+message RegisteredStudent {
+  string md5_encrypt = 1;
+}
+
+message DivisionName {
+  string letter = 1;
+}
+
+message Letters {
+  string letter = 1;
+}
+
+message Combineletter {
+  string fullString = 1;
+}
+
+message FindTheLongestWordRequest {
+  string word = 1;
+}
+
+message FindTheLongestWordResponse {
+  string word = 1;
+}
+
+service ObsService {
+  rpc Registration(StudentRegistration) returns (RegisteredStudent){};
+
+  rpc Division(StudentRegistration) returns (stream DivisionName) {};
+
+  rpc CombineLetters(stream Letters) returns (Combineletter) {};
+
+  rpc FindLongestWord(stream FindTheLongestWordRequest) returns (stream FindTheLongestWordResponse) {};
+}

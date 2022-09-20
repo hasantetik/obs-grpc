@@ -1,0 +1,5 @@
+# Project exclude paths
+/Grpc-client/target/
+/ObsClient/target/
+/ObsServer/target/
+/proto/target/

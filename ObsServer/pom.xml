@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>obs-grpc</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ObsServer</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <net.devh.grpc-server-spring-boot-starter.version>2.9.0.RELEASE</net.devh.grpc-server-spring-boot-starter.version>
+        <com.srkn.ex.grpc.Interface-Project.version>1.0-SNAPSHOT</com.srkn.ex.grpc.Interface-Project.version>
+        <spring.boot.version>2.7.2</spring.boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.19.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>${net.devh.grpc-server-spring-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>proto</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>1.6.7</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
